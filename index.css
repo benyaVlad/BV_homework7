@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 210px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.block {
+    height: 50px;
+    width: 50px;
+    background: gray;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid wheat;
+}
+.block:nth-child(1n+21) {
+    background: blue;
+}
+.block:nth-child(4n-1){
+    background: darkred;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    width: 494px;
+    height: 92px;
+    color: white;
+    background: #44D3A8;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.button:before {
+    content: " ";
+    display: block;
+    border-top: 2px solid #C4C4C4;
+    border-bottom: 2px solid #C4C4C4;
+    height: 8px;
+    width: 200px;
+    margin-right: 46px;
+}
+.button:after {
+    content: " ";
+    display: block;
+    border-top: 2px solid #C4C4C4;
+    border-bottom: 2px solid #C4C4C4;
+    height: 8px;
+    width: 200px;
+    margin-left: 46px;
+}
+button:active{
+    background: darkred;
+    transform: scale(0.8);
+}
